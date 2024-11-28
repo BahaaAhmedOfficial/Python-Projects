@@ -23,13 +23,15 @@ This Python script is a simple implementation of the classic Hangman game. Playe
     ```
 
 2. **Install the `requests` library**:
-    ```bash
+    ```
+    bash
     pip install requests
     ```
 
 3. **Create a `words.txt` file** in the project directory:
     - Open a text editor and add a list of words, one per line. For example:
-      ```plaintext
+      ```
+      plaintext
       apple
       banana
       cherry
@@ -41,7 +43,8 @@ This Python script is a simple implementation of the classic Hangman game. Playe
 ## Usage
 
 1. **Run the script**:
-    ```bash
+    ```
+    bash
     python main.py
     ```
 
