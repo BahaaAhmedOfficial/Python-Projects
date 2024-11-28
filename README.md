@@ -1,69 +1,95 @@
-# Movie Synopsis Creator
+# Python Projects
 
-This Python script fetches movie synopses from the OMDb API and creates a synopsis file for each movie in a specified directory. It's designed to help you organize and manage your movie collection with automatically generated synopses.
+Welcome to my personal repository of Python projects! This repository contains a collection of projects I have worked on, and I will be adding more as I continue to explore and develop new ideas.
 
-## Prerequisites
+## Projects
 
-- Python 3.x
-- `requests` library
+### 1. Hangman Game
+A simple implementation of the classic Hangman game. Players guess letters to reveal a hidden word. If they make too many incorrect guesses, the hangman is "completed" and they lose the game.
 
-## Installation
+#### Features
+- Draws a hangman graphic as the player makes incorrect guesses.
+- Allows the player to input guesses and checks them against the word.
+- Provides a definition of the word at the end of the game using the Dictionary API.
 
-1. **Clone the repository**:
+#### Installation
+- **Clone the repository**:
     ```
     bash
-    git clone https://github.com/yourusername/moviesynopsis.git
-    cd moviesynopsis
+    git clone https://github.com/yourusername/python-projects.git
+    cd python-projects/hangman
     ```
 
-2. **Install the required packages**:
+- **Install the `requests` library**:
     ```
     bash
     pip install requests
     ```
 
-## Usage
-
-1. **Update the `create_synopsis_files` function** in `main.py` to use your actual movies directory:
+- **Create a `words.txt` file** in the `hangman` directory:
     ```
-    python
-    create_synopsis_files('D:\\03 - Cinema\\Movies')
+    plaintext
+    apple
+    banana
+    cherry
+    date
+    elderberry
     ```
 
-2. **Run the script**:
+- **Run the script**:
     ```
     bash
     python main.py
     ```
 
-## Functions
+### 2. Movie Synopsis Creator
+This script fetches movie synopses from the OMDb API and creates a synopsis file for each movie in a specified directory. 
 
-### `get_imdb_id(movie_title)`
+#### Features
+- Fetches movie details using the OMDb API.
+- Generates text files with movie synopses.
+- Organizes and manages movie collection with automatically generated synopses.
 
-Fetches the IMDb ID for the given movie title using the OMDb API.
+#### Installation
+- **Clone the repository**:
+    ```
+    bash
+    git clone https://github.com/yourusername/python-projects.git
+    cd python-projects/movie-synopsis
+    ```
 
-- **Parameters**: `movie_title` (str) - The title of the movie.
-- **Returns**: `imdb_id` (str) - The IMDb ID of the movie.
+- **Install the required packages**:
+    ```
+    bash
+    pip install requests python-dotenv
+    ```
 
-### `get_synopsis(imdb_id)`
+- **Create a `.env` file** in the `movie-synopsis` directory:
+    ```
+    plaintext
+    API_KEY=your_api_key_here
+    ```
 
-Fetches the synopsis for the given IMDb ID using the OMDb API.
+- **Run the script**:
+    ```
+    bash
+    python main.py
+    ```
 
-- **Parameters**: `imdb_id` (str) - The IMDb ID of the movie.
-- **Returns**: `synopsis` (str) - The full plot synopsis of the movie.
+## More Projects Coming Soon!
+Stay tuned for more exciting Python projects. I will continuously update this repository with new and innovative projects.
 
-### `create_synopsis_files(directory)`
+## Contributions
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/python-projects/issues).
 
-Walks through all directories and subdirectories in the specified directory, fetches IMDb IDs and synopses for movies, and creates synopsis files.
+## License
+This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- **Parameters**: `directory` (str) - The path to the directory containing movie folders.
-
-## Notes
-
-- Make sure to use your actual OMDb API key.
-- Excludes the unwanted directories like my `!Torrents` and `Featurettes` directories from the search.
-
+## Contact
+For any inquiries or feedback, you can reach me at:
+- **Email**: your.email@example.com
+- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/yourprofile)
 
 ---
 
-Happy movie watching! 🎬
+Happy coding! 😊
